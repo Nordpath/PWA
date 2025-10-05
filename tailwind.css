@@ -1,0 +1,284 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  button,
+  input,
+  select,
+  textarea {
+    @apply appearance-none bg-transparent border-0 outline-none;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --black: rgba(0, 0, 0, 1);
+  --body-l-bold-font-family: "Instrument Sans", Helvetica;
+  --body-l-bold-font-size: 18px;
+  --body-l-bold-font-style: normal;
+  --body-l-bold-font-weight: 600;
+  --body-l-bold-letter-spacing: 0px;
+  --body-l-bold-line-height: 140%;
+  --body-m-bold-font-family: "Instrument Sans", Helvetica;
+  --body-m-bold-font-size: 16px;
+  --body-m-bold-font-style: normal;
+  --body-m-bold-font-weight: 600;
+  --body-m-bold-letter-spacing: 0px;
+  --body-m-bold-line-height: 140%;
+  --body-m-regular-font-family: "Instrument Sans", Helvetica;
+  --body-m-regular-font-size: 16px;
+  --body-m-regular-font-style: normal;
+  --body-m-regular-font-weight: 400;
+  --body-m-regular-letter-spacing: 0px;
+  --body-m-regular-line-height: 140%;
+  --body-s-bold-font-family: "Instrument Sans", Helvetica;
+  --body-s-bold-font-size: 14px;
+  --body-s-bold-font-style: normal;
+  --body-s-bold-font-weight: 600;
+  --body-s-bold-letter-spacing: 0px;
+  --body-s-bold-line-height: 140%;
+  --body-s-regular-font-family: "Instrument Sans", Helvetica;
+  --body-s-regular-font-size: 14px;
+  --body-s-regular-font-style: normal;
+  --body-s-regular-font-weight: 400;
+  --body-s-regular-letter-spacing: 0px;
+  --body-s-regular-line-height: 140%;
+  --default-bold-body-font-family: "SF Pro Text", Helvetica;
+  --default-bold-body-font-size: 17px;
+  --default-bold-body-font-style: normal;
+  --default-bold-body-font-weight: 400;
+  --default-bold-body-letter-spacing: -0.40799999237060547px;
+  --default-bold-body-line-height: 22px;
+  --error-red: rgba(238, 0, 4, 1);
+  --font-for-buttons-font-family: "Instrument Sans", Helvetica;
+  --font-for-buttons-font-size: 16px;
+  --font-for-buttons-font-style: normal;
+  --font-for-buttons-font-weight: 500;
+  --font-for-buttons-letter-spacing: 0px;
+  --font-for-buttons-line-height: 130%;
+  --grey-600: rgba(110, 116, 145, 1);
+  --grey-aaa: rgba(89, 89, 89, 1);
+  --heading-l-font-family: "Instrument Sans", Helvetica;
+  --heading-l-font-size: 18px;
+  --heading-l-font-style: normal;
+  --heading-l-font-weight: 500;
+  --heading-l-letter-spacing: 0px;
+  --heading-l-line-height: 120.00000762939453%;
+  --heading-XL-font-family: "Instrument Sans", Helvetica;
+  --heading-XL-font-size: 24px;
+  --heading-XL-font-style: normal;
+  --heading-XL-font-weight: 500;
+  --heading-XL-letter-spacing: 0px;
+  --heading-XL-line-height: 120.00000762939453%;
+  --instrument-sans-18px-font-family: "Instrument Sans", Helvetica;
+  --instrument-sans-18px-font-size: 18px;
+  --instrument-sans-18px-font-style: normal;
+  --instrument-sans-18px-font-weight: 400;
+  --instrument-sans-18px-letter-spacing: 0px;
+  --instrument-sans-18px-line-height: 129.99999523162842%;
+  --MGP-medium-22px-font-family: "MGP Text", Helvetica;
+  --MGP-medium-22px-font-size: 22px;
+  --MGP-medium-22px-font-style: normal;
+  --MGP-medium-22px-font-weight: 500;
+  --MGP-medium-22px-letter-spacing: 0px;
+  --MGP-medium-22px-line-height: 130%;
+  --instrument-sans-20px-semibold-font-family: "Instrument Sans", Helvetica;
+  --instrument-sans-20px-semibold-font-size: 20px;
+  --instrument-sans-20px-semibold-font-style: normal;
+  --instrument-sans-20px-semibold-font-weight: 600;
+  --instrument-sans-20px-semibold-letter-spacing: 0px;
+  --instrument-sans-20px-semibold-line-height: 130%;
+  --MGP-text-14px-font-family: "MGP Text", Helvetica;
+  --MGP-text-14px-font-size: 14px;
+  --MGP-text-14px-font-style: normal;
+  --MGP-text-14px-font-weight: 400;
+  --MGP-text-14px-letter-spacing: 0px;
+  --MGP-text-14px-line-height: 100%;
+  --MGP-text-18px-font-family: "MGP Text", Helvetica;
+  --MGP-text-18px-font-size: 18px;
+  --MGP-text-18px-font-style: normal;
+  --MGP-text-18px-font-weight: 500;
+  --MGP-text-18px-letter-spacing: 0px;
+  --MGP-text-18px-line-height: 130%;
+  --instrument-sans-16pc-BOLD-font-family: "Instrument Sans", Helvetica;
+  --instrument-sans-16pc-BOLD-font-size: 16px;
+  --instrument-sans-16pc-BOLD-font-style: normal;
+  --instrument-sans-16pc-BOLD-font-weight: 600;
+  --instrument-sans-16pc-BOLD-letter-spacing: 0px;
+  --instrument-sans-16pc-BOLD-line-height: 130%;
+  --instrument-sans-16px-font-family: "Instrument Sans", Helvetica;
+  --instrument-sans-16px-font-size: 16px;
+  --instrument-sans-16px-font-style: normal;
+  --instrument-sans-16px-font-weight: 400;
+  --instrument-sans-16px-letter-spacing: 0px;
+  --instrument-sans-16px-line-height: 130%;
+  --body-l-regular-font-family: "Instrument Sans", Helvetica;
+  --body-l-regular-font-size: 18px;
+  --body-l-regular-font-style: normal;
+  --body-l-regular-font-weight: 400;
+  --body-l-regular-letter-spacing: 0px;
+  --body-l-regular-line-height: 140%;
+  --system-colors-miscellaneous-text-field-BG: rgba(255, 255, 255, 1);
+  --variable-collection-white: rgba(255, 255, 255, 1);
+  --white: rgba(255, 255, 255, 1);
+}
+
+/*
+
+To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+
+<body data-system-colors-mode="light">
+    <!-- the rest of your content -->
+</body>
+
+You can apply the theme on any DOM node, not just the `body`
+
+*/
+
+[data-system-colors-mode="light"] {
+  --system-colors-miscellaneous-text-field-BG: rgba(255, 255, 255, 1);
+}
+
+[data-system-colors-mode="dark"] {
+  --system-colors-miscellaneous-text-field-BG: rgba(0, 0, 0, 1);
+}
+
+[data-system-colors-mode="dark-elevated"] {
+  --system-colors-miscellaneous-text-field-BG: rgba(0, 0, 0, 1);
+}
+
+[data-system-colors-mode="IC-light"] {
+  --system-colors-miscellaneous-text-field-BG: rgba(255, 255, 255, 1);
+}
+
+[data-system-colors-mode="IC-dark"] {
+  --system-colors-miscellaneous-text-field-BG: rgba(0, 0, 0, 1);
+}
+
+[data-system-colors-mode="IC-dark-elevated"] {
+  --system-colors-miscellaneous-text-field-BG: rgba(0, 0, 0, 1);
+}
+
+:root {
+  --animate-spin: spin 1s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-fade-up {
+  animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) infinite linear;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 8s infinite;
+}
+
+.animate-spin {
+  animation: var(--animate-spin);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes image-glow {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+  }
+
+  10% {
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  90%,
+  to {
+    background-position: calc(-100% - var(--shimmer-width)) 0;
+  }
+
+  30%,
+  60% {
+    background-position: calc(100% + var(--shimmer-width)) 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
+
+/* Line clamp utility */
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
